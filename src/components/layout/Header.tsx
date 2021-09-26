@@ -7,8 +7,9 @@ import {
   Text,
 
 } from "@chakra-ui/layout";
+import {FaBars} from 'react-icons/fa';
 
-import {Stack} from "@chakra-ui/react";
+import {IconButton, Stack} from "@chakra-ui/react";
 const Header = () => {
   return (
     <Flex fontFamily={'ubuntu'} color="white" margin="2% 5%" justifyContent={'space-between'}>
@@ -45,7 +46,14 @@ const Header = () => {
 
     {/*   Mobile Nav Icon*/}
       <Box  display={['block',null,null,null,'none']}>
-        icon
+        <IconButton _active={{
+            background: 'transparent',
+        }} isRound={true} background={'transparent'} _hover={{
+            background: 'transparent',
+            color: 'green',
+        }} aria-label={'nav-bar'}>
+            <FaBars size={'25'}/>
+        </IconButton>
       </Box>
 
     </Flex>
