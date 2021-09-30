@@ -7,12 +7,12 @@ import {
 } from "@chakra-ui/layout";
 import {ArrowDownIcon} from "@chakra-ui/icons";
 import {FaHeart, FaLink} from 'react-icons/fa';
-import {IconButton} from "@chakra-ui/react";
+import {Container, IconButton} from "@chakra-ui/react";
 import Image from 'next/image';
 
 const Contribute = () => {
     return (
-        <Box maxW={'1200px'} mx={'auto'}  color="green" flexDirection="column">
+        <Container maxW={'1200px'} mx={'auto'}  color="green" flexDirection="column">
 
             <ArrowDownIcon w={50} h={58}/>
 
@@ -85,8 +85,8 @@ const Contribute = () => {
             >
                 <Box
                     bg="#333333"
-                    minW={'350px'}
-                    maxW={'360px'}
+                    minW={'300px'}
+                    maxW={'350px'}
                     margin={4}
                     p={'1rem'}
                     color="white"
@@ -161,8 +161,8 @@ const Contribute = () => {
                 {/* 2nd box */}
                 <Box
                     bg="#333333"
-                    minW={'350px'}
-                    maxW={'360px'}
+                    minW={'300px'}
+                    maxW={'350px'}
                     margin={4}
                     p={'1rem'}
                     color="white"
@@ -236,8 +236,8 @@ const Contribute = () => {
                 {/* 3rd box */}
                 <Box
                     bg="#333333"
-                    minW={'350px'}
-                    maxW={'360px'}
+                    minW={'300px'}
+                    maxW={'350px'}
                     margin={4}
                     p={'1rem'}
                     color="white"
@@ -341,7 +341,7 @@ const Contribute = () => {
                     <Image src={'/home/apple.png'} width={61} height={70}/>
                 </Box>
             </Box>
-        </Box>
+        </Container>
     );
 };
 
